@@ -1,0 +1,38 @@
+[
+  {
+    "campaign": "Christmas Sale 2018",
+    "status": "Sending"
+  },
+  {
+    "campaign": "Newsletter December",
+    "status": "Sent"
+  },
+  {
+    "campaign": "Santa's Sale",
+    "status": "Sending"
+  },
+  {
+    "campaign": "Christmas Campaign",
+    "status": "Sent"
+  },
+  {
+    "campaign": "December - Shoes!",
+    "status": "Draft"
+  },
+  {
+    "campaign": "What's New? - December Edition \"Winter...",
+    "status": "Sent"
+  },
+  {
+    "campaign": "Limited Editions",
+    "status": "Draft"
+  },
+  {
+    "campaign": "Social Updates",
+    "status": "Error"
+  },
+  {
+    "campaign": "October - Bring The News",
+    "status": "Stopped"
+  }
+]
