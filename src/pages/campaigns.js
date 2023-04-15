@@ -13,6 +13,7 @@ const Campaigns = (props) => {
   const [items, setItems] = useState(props.items);
   const [list, setList] = useState(items);
   const [dragAndDrop, setDragAndDrop] = useState(initialDnDState);
+  const [selectedStatus, setSelectedStatus] = useState("");
 
   const onDragStart = (event) => {
     const initialPosition = Number(event.currentTarget.dataset.position);
@@ -70,8 +71,32 @@ const Campaigns = (props) => {
     });
   };
 
+  const handleStatusChange = (event) => {
+    setSelectedStatus(event.target.value);
+    if (event.target.value === "") {
+      setList(items);
+    } else {
+      setList(items.filter((item) => item.status === event.target.value));
+    }
+  };
+
   return (
     <section className="campaign">
+      <div className="filters">
+        <label htmlFor="status-filter">Filter by status:</label>
+        <select
+          id="status-filter"
+          value={selectedStatus}
+          onChange={handleStatusChange}
+        >
+          <option value="">All</option>
+          <option value="Sending">Sending</option>
+          <option value="Sent">Sent</option>
+          <option value="Draft">Draft</option>
+          <option value="Error">Error</option>
+          <option value="Stopped">Stopped</option>
+        </select>
+      </div>
       <ul className="campaign">
         {list.map((item, index) => {
           return (
