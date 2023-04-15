@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./campaigns.css";
 
 const initialDnDState = {
   draggedFrom: null,
