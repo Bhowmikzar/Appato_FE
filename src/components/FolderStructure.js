@@ -73,7 +73,7 @@ function FolderStructure() {
   }
 
   return (
-    <div style={{ background: "#1AA7EC", height: "100vh" }}>
+    <div style={{ background: "#1AA7EC", height: "100vh", fontSize: "20px" }}>
       <form onSubmit={handleAddFolder} className="sidebar">
         <input type="text" value={newFolderName} onChange={handleInputChange} />
         <button type="submit">Add Folder</button>
