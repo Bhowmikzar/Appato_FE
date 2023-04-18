@@ -94,7 +94,10 @@ function FolderStructure() {
   function renderTreeviewItem(item) {
     return (
       <ul className="lists">
-        <li key={item.id} style={{ flexDirection: "column" }}>
+        <li
+          key={item.id}
+          style={{ flexDirection: "column", cursor: "pointer" }}
+        >
           <div onClick={(event) => handleItemClick(event, item)}>
             {item.name}
           </div>
